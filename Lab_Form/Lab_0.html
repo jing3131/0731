@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>    
+    <script src="js/bootstrap.min.js" ></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- HTML 內容放這邊 -->
+
+    <form method="post" 
+          action="http://server2020.epizy.com/echo.php">      <!--class="form-inline"嵌入成一行--> 
+          <!-- method="get" 會有資安疑慮-->
+
+        <div class="form-group row">            <!-- row同一列 -->
+            <label for="userNameTextBox">
+                <i class="fa fa-user col-form-label col-2 text-right"></i> 帳號:        <!-- 2/12，再向右靠 -->
+            </label>
+            <input type="text" 
+                    id="userNameTextBox" 
+                    name="userName"
+                    placeholder="輸入帳號或E-mail"       
+                    class="col-10 form-control" />          <!-- placeholder=提示文字 -->  <!-- class套用css -->
+        </div>        
+
+        <div class="form-group row">
+            <label for="userPwdTextBox">
+                <i class="fa fa-lock col-form-label col-2 text-right"></i> 密碼:
+            </label>
+            <input type="password" 
+                    id="userPwdTextBox" 
+                    name="userPwd"
+                    placeholder="輸入密碼"
+                    class="col-10 form-control" />           
+        </div>   
+
+        <div class="form-group row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="form-check col-10">
+                <label class="form-check-label">
+                    <input type="checkbox"
+                           class="form-ckeck-input" 
+                           id="rememberMeCheckbox"
+                           name="rememberMe" 
+                           value="yes"> auto login     <!-- 也可將兩者合併 -->
+                </label>
+            </div>
+        </div>
+        
+
+        <!-- <div>
+            <input type="date" >
+        </div> -->
+
+        <div class="form-group row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-10">
+                <button type="submit" 
+                        id="loginButton" 
+                        value="login"
+                        name="loginOrcancel"
+                        class="btn btn-outline-success">
+                        <i class="fa fa-check"></i> 登入
+                </button>
+                <button type="submit" 
+                        id="cancelButton" 
+                        value="cancel"
+                        name="loginOrcancel"
+                        class="btn btn-outline-secondary">
+                        <i class="fa fa-remove"></i> 取消
+                </button> 
+            </div>
+        </div>     
+        <!-- btn btn-outline-succes →綠、(warning →黃)、(danger →紅) --->
+
+
+    </form>
+
+    
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

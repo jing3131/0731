@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- https://bootstrapformbuilder.com/ -->
+    <form method="POST" action="http://server2020.epizy.com/echo.php">
+
+        <input type="hidden" name="memberId" value="7891">      <!-- hidden 隱藏性欄位，但依然會被送到伺服器 -->
+        <label for="userName"> Your name: </label>      <!-- 點選label游標進入form -->
+        <input id="userName" name="userNameTextbox" type="text">        <!-- echo.php利用name將資料傳送，表單往外傳送使用name -->
+        <br>
+        <label for="autoLogin"> Auto login </label>                     <!-- 有勾選會傳送on(value=1)，沒勾選不會傳送 -->
+        <input type="checkbox" id="autoLogin" name="autoLogin" value="1">
+        <br>
+        <input type="radio" value="2" id="tp" name="city">      <!-- 用name做群組 -->
+        <label for="tp">Tapei</label>
+        <input type="radio" value="4" id="tc" name="city">
+        <label for="tc">Taichung</label>
+        <input type="radio" value="6" id="tn" name="city">
+        <label for="tn">Tainan</label>
+        <br>
+        <select name="regin">                      <!--下拉式選單-->
+            <option value="2">Taipei</option>
+            <option value="4">Taichung</option>
+            <option value="6">Tainan</option>
+        </select>
+        <br>
+        <input type="submit" value="ok" class="btn btn-outline-success">        <!-- submit 送出表單button -->
+
+    </form>
+
+</body>
+</html>

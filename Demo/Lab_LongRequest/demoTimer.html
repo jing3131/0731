@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="report">...</div>
+    <script>
+        // function displayTime(){
+        //     report.innerText=Date();
+        //     setTimeout(displayTime,1000);
+        // };        
+        // displayTime();          // 非遞迴，一次結束再進行下一次
+
+        setInterval(function() {            // 兩者執行效果相同 setInterval按指定週期執行所要的方法
+            report.innerText=Date();
+        },1000) ;
+
+        // setTimeout(displayTime,3000);
+        // report.innerText="Processing...";
+    </script>
+</body>
+</html>

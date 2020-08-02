@@ -153,7 +153,7 @@ Lab -- Bootstrap 對話盒
 
 
 3.7 找到 <div class="modal-dialog"> 那行，改成:
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg">             // 版面差別
     或者改成
     <div class="modal-dialog modal-sm">
 
